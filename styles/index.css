@@ -20,17 +20,6 @@ li > a:hover, a:hover {
   text-decoration: underline;
 }
 
-.btn-sesion {
-  background-color: #1a73e8;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.btn-sesion:hover {
-  background-color: #1359b4;
-  box-shadow: 1px 1px 2px black;
-  text-decoration: none;
-}
 
 main {
   display: flex;
@@ -44,7 +33,7 @@ input {
   width: 80%;
   border-style: none;
 }
-
+/* Navbar de sesion  */
 .content-nav {
   display: flex;
   justify-content: end;
@@ -59,18 +48,41 @@ input {
   gap: 20px;
 }
 
-.icon-menu {
-  color: white;
-  height: 15px;
-  width: 15px;
+.btn-sesion {
+  background-color: #1a73e8;
+  padding: 10px;
+  border-radius: 5px;
 }
 
+.btn-sesion:hover {
+  background-color: #1359b4;
+  box-shadow: 1px 1px 2px black;
+  text-decoration: none;
+}
+
+.icon-menu > img{
+  position: relative;
+  top: 10px;
+  left: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+.icon-menu > img:hover {
+  background-color: rgba(128, 128, 128, 0.329);
+}
+
+.icon-menu {
+  color: white;
+  height: 40px;
+  width: 40px;
+} 
+
 .icon-menu:hover {
-  background-color: grey;
-  height: 25px;
-  width: 25px;
+  background-color: rgba(128, 128, 128, 0.329);
   border-radius: 50%;
 }
+/* Barra de busqueda y botones */
 .content-bar {
   display: flex;
   align-items: center;
@@ -113,7 +125,7 @@ input {
   padding-bottom: 30%;
   font-size: 12px;
 }
-
+/* Pie de pagina */
 .footer, .footer > a {
   font-size: 14px;
   background-color: #171717;
