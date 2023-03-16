@@ -6,6 +6,9 @@
   color: white;
 }
 
+:root {
+  --hover-bar-color: #303134;
+}
 a {
   font-size: 12px;
   color: white;
@@ -31,6 +34,7 @@ main {
 input {
   height: 90%;
   width: 80%;
+  background-color: transparent;
   border-style: none;
 }
 /* Navbar de sesion  */
@@ -97,6 +101,12 @@ input {
   margin: 5px 15px;
   height: 20px;
   width: 20px;
+  background-color: transparent;
+}
+
+.hover-barra:hover {
+  background-color: var(--hover-bar-color);
+  border-color: var(--hover-bar-color);
 }
 
 .content-btns {
@@ -122,7 +132,7 @@ input {
 }
 
 .content-label {
-  padding-bottom: 30%;
+  padding-bottom: 35%;
   font-size: 12px;
 }
 /* Pie de pagina */
