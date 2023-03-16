@@ -8,6 +8,7 @@
 
 :root {
   --hover-bar-color: #303134;
+  --margin-color: #9aa0a6;
 }
 a {
   font-size: 12px;
@@ -31,12 +32,6 @@ main {
   padding: 10% 0;
 }
 
-input {
-  height: 90%;
-  width: 80%;
-  background-color: transparent;
-  border-style: none;
-}
 /* Navbar de sesion  */
 .content-nav {
   display: flex;
@@ -90,7 +85,7 @@ input {
 .content-bar {
   display: flex;
   align-items: center;
-  border: 1px solid white;
+  border: 1px solid var(--margin-color);
   border-radius: 50px;
   margin: 5% 0;
   height: 44px;
@@ -107,6 +102,17 @@ input {
 .hover-barra:hover {
   background-color: var(--hover-bar-color);
   border-color: var(--hover-bar-color);
+}
+
+.input-search {
+  height: 90%;
+  width: 80%;
+  background-color: transparent;
+  border-style: none;
+}
+
+.input-search:focus {
+  border-style: none; 
 }
 
 .content-btns {
@@ -127,7 +133,7 @@ input {
 }
 
 .btns > button:hover {
-  border: 1px solid white;
+  border: 1px solid var(--margin-color);
   cursor: pointer;
 }
 
@@ -135,13 +141,21 @@ input {
   padding-bottom: 35%;
   font-size: 12px;
 }
+
+.link-idioma {
+  color: #8ab4f8;
+}
 /* Pie de pagina */
 .footer, .footer > a {
   font-size: 14px;
   background-color: #171717;
   padding: 10px;
+  color: var(--margin-color);
 }
 
+.region {
+  border-bottom: 1px solid #3c4043;
+}
 .content-opciones {
   display: flex;
   justify-content: space-between;
