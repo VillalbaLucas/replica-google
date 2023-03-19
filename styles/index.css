@@ -4,23 +4,25 @@
   margin: 0;
   background-color: #202124;
   color: white;
+  box-sizing: border-box;
 }
 
 :root {
   --hover-bar-color: #303134;
   --margin-color: #9aa0a6;
 }
+
 a {
   font-size: 12px;
   color: white;
   text-decoration: none;
 }
 
-li > a{
+li>a {
   display: flex;
 }
 
-li > a:hover, a:hover {
+a:hover {
   text-decoration: underline;
 }
 
@@ -29,6 +31,11 @@ main {
   flex-direction: column;
   align-items: center;
   padding: 10% 0;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 5px;
 }
 
 /* Navbar de sesion  */
@@ -48,8 +55,6 @@ main {
 
 .btn-sesion {
   background-color: #1a73e8;
-  padding: 10px;
-  border-radius: 5px;
 }
 
 .btn-sesion:hover {
@@ -58,7 +63,7 @@ main {
   text-decoration: none;
 }
 
-.icon-menu > img{
+.icon-menu>img {
   position: relative;
   top: 10px;
   left: 10px;
@@ -71,12 +76,13 @@ main {
   color: white;
   height: 40px;
   width: 40px;
-} 
+}
 
 .icon-menu:hover {
   background-color: rgba(128, 128, 128, 0.329);
   border-radius: 50%;
 }
+
 /* Barra de busqueda y botones */
 .content-bar {
   display: flex;
@@ -108,7 +114,7 @@ main {
 }
 
 .input-search:focus {
-  outline: none; 
+  outline: none;
 }
 
 .content-btns {
@@ -118,17 +124,17 @@ main {
   gap: 25px;
 }
 
-.btns > button {
+.search-btn {
   box-sizing: content-box;
   font-size: 14px;
   border-radius: 5px;
   border: 1px solid transparent;
   background-color: #303134;
-  padding: 10px 20px;
   margin: 0 10px;
+  padding: 10px 20px;
 }
 
-.btns > button:hover {
+.search-btn:hover {
   border: 1px solid var(--margin-color);
   cursor: pointer;
 }
@@ -141,8 +147,10 @@ main {
 .link-idioma {
   color: #8ab4f8;
 }
+
 /* Pie de pagina */
-.footer, .footer > a {
+.footer,
+.footer>a {
   font-size: 14px;
   background-color: #171717;
   padding: 10px;
@@ -151,9 +159,10 @@ main {
 
 .region {
   border-bottom: 1px solid #3c4043;
+  padding: 12px;
 }
+
 .content-opciones {
   display: flex;
   justify-content: space-between;
 }
-
